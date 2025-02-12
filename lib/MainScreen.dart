@@ -8,18 +8,19 @@ class MainScreen extends StatefulWidget {
 }
 
 class _MainScreenState extends State<MainScreen> {
+  bool showingDrawer = false;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('나는 타이들이다'),
-        actions: [
-          IconButton(
-            onPressed: () {},
-            icon: Icon(Icons.menu),
-          )
-        ],
-        
+        title: Text('I am the title'),
+      ),
+      endDrawer: Drawer(
+        child: Text("data"),
+      ),
+      drawer: Drawer(
+        child: Text('data'),
       ),
     );
   }
