@@ -14,6 +14,7 @@ class _MainScreenState extends State<MainScreen> {
       appBar: AppBar(
         title: const Text('Main Screen'),
         centerTitle: true,
+        actions: [],
       ),
       body: Center(
         child: Text('Hello, World!'),
