@@ -11,25 +11,17 @@ class _MainScreenState extends State<MainScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: Text(
-            'This is an app',
-            style: TextStyle(color: Colors.white),
-          ),
-          backgroundColor: Colors.blue,
-          centerTitle: false,
-        ),
-        body: Text('안녕'),
-        bottomNavigationBar: BottomAppBar(
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              Icon(Icons.phone),
-              Icon(Icons.message),
-              Icon(Icons.contact_page)
-            ],
-          ),
-        ));
+      appBar: AppBar(
+        title: Text('나는 타이들이다'),
+        actions: [
+          IconButton(
+            onPressed: () {},
+            icon: Icon(Icons.menu),
+          )
+        ],
+        
+      ),
+    );
   }
 }
 // 하단 네비게이션 바 위에 회색 그거 줄 해야함
