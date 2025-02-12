@@ -12,19 +12,26 @@ class _MainScreenState extends State<MainScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('This is an app', style: TextStyle(color: Colors.white),),
+        title: Text(
+          'This is an app',
+          style: TextStyle(color: Colors.white),
+        ),
         backgroundColor: Colors.blue,
         centerTitle: false,
       ),
       body: Text('안녕'),
-      bottomSheet: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        children: [
-          Icon(Icons.phone),
-          Icon(Icons.message),
-          Icon(Icons.contact_page)
-        ],
+      bottomNavigationBar: Container(
+        padding: EdgeInsets.symmetric(vertical: 20),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            Icon(Icons.phone),
+            Icon(Icons.message),
+            Icon(Icons.contact_page)
+          ],
+        ),
       ),
     );
   }
 }
+// 하단 네비게이션 바 위에 회색 그거 줄 해야함
