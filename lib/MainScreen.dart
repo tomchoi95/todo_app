@@ -12,12 +12,16 @@ class _MainScreenState extends State<MainScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Main Screen'),
-        centerTitle: true,
-        actions: [],
+        title: Text('This is an app'),
       ),
-      body: Center(
-        child: Text('Hello, World!'),
+      body: Text('안녕'),
+      bottomSheet: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Icon(Icons.phone),
+          Icon(Icons.message),
+          Icon(Icons.star)
+        ],
       ),
     );
   }
