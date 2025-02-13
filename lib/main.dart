@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'MainScreen.dart';
 
-void main() {
-  runApp(TodoApp());
-}
+void main() => runApp(TodoApp());
 
 class TodoApp extends StatelessWidget {
   const TodoApp({super.key});
