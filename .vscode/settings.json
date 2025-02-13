@@ -3,5 +3,6 @@
         "comments": "on",
         "strings": "on",
         "other": "on"
-    }
+    },
+    "audioCues.enabled": false
 }
